@@ -15,6 +15,7 @@
 .DS_Store
 .prettierignore
 
-# Avoid accidental upload of the initial README
+# Avoid accidental upload of the utility files
 README-mentor.md
 README-template.md
+style-guide.md

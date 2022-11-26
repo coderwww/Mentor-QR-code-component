@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* CSS custom properties (variables) */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --font-outfit: 15px 'Outfit', sans-serif;
+    --shadow: 5px 5px 50px 5px rgba(0,0,0,0.1);
+}
+
 body { 
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--light-gray);
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -8,9 +20,8 @@ body {
 }
 
 .qr-code-component {
-    font-family: 'Outfit', sans-serif;
-    font-size: 15px;
-    background-color: hsl(0, 0%, 100%);
+    font: var(--font-outfit);
+    background-color: var(--white);
     box-sizing: border-box;
     max-width: 300px;
     align-self: center;
@@ -18,29 +29,26 @@ body {
     padding: 15px;
     border-radius: 20px;
     text-align: center;
-    color: hsl(220, 15%, 55%);
-    -webkit-box-shadow: 5px 5px 50px 5px rgba(0,0,0,0.1);
-    box-shadow: 5px 5px 50px 5px rgba(0,0,0,0.1);
+    color: var(--grayish-blue);
+    -webkit-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
 }
 
-.qr-code-component img {
+.qr-code-component .qr-img {
     width: 100%;
     border-radius: 10px;
     display: block;
 }
 
-.qr-code-component h3 {
+.qr-code-component .qr-header {
     font-weight: 700;
     font-size: 140%;
-    color: hsl(218, 44%, 22%);
+    color: var(--dark-blue);
     padding: 0;
     margin: 1em 0.5em;
 }
 
-.qr-code-component p {
+.qr-code-component .qr-text {
     padding: 0;
     margin: 1em 0.5em;
 }
-
-.attribution { font-size: 11px; text-align: center; margin: 3rem 0 1rem 0;}
-.attribution a { color: hsl(228, 45%, 44%); }
