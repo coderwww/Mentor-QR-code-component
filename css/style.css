@@ -23,7 +23,7 @@ body {
     font: var(--font-outfit);
     background-color: var(--white);
     box-sizing: border-box;
-    max-width: 300px;
+    max-width: 320px;
     align-self: center;
     margin: 0 auto;
     padding: 15px;
@@ -45,10 +45,10 @@ body {
     font-size: 140%;
     color: var(--dark-blue);
     padding: 0;
-    margin: 1em 0.5em;
+    margin: 1em;
 }
 
 .qr-code-component .qr-text {
     padding: 0;
-    margin: 1em 0.5em;
+    margin: 1em;
 }
